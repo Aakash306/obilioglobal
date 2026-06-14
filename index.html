@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Obilio Renewables | Solar Installation Tamil Nadu</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --orange:#E8620A;--orange-dark:#C44E05;--orange-light:#FF8C42;
+  --orange-pale:#FFF3EC;--orange-mid:#FCA55D;--sun:#FFB830;
+  --dark:#1A1208;--dark2:#2E1F0A;--gray:#6B6259;
+  --light:#FFF9F5;--white:#FFFFFF;--text:#1A1208;--radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--text);overflow-x:hidden;}
+
+/* ====== NAV ====== */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:72px;padding:0 5%;background:rgba(255,249,245,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,98,10,0.1);display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Playfair Display',serif;font-weight:900;font-size:1.45rem;color:var(--orange);letter-spacing:-0.5px;text-decoration:none;cursor:pointer;}
+.nav-logo span{color:var(--dark);}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center;}
+.nav-links li{position:relative;}
+.nav-links a{text-decoration:none;color:var(--gray);font-size:0.88rem;font-weight:500;padding:0.5rem 1rem;border-radius:8px;transition:all 0.2s;display:block;cursor:pointer;}
+.nav-links a:hover,.nav-links a.active{color:var(--orange);background:rgba(232,98,10,0.06);}
+.dropdown a{cursor:pointer;}
+.nav-links a.active::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:20px;height:2px;background:var(--orange);border-radius:2px;}
+/* Dropdown — bridge gap with padding-top so mouse can move down without losing hover */
+.dropdown{display:none;position:absolute;top:100%;left:0;padding-top:10px;z-index:300;min-width:220px;}
+.dropdown-inner{background:#fff;border:1px solid rgba(232,98,10,0.12);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.1);padding:0.5rem;}
+.has-dropdown:hover .dropdown{display:block;}
+.dropdown a{padding:0.65rem 1rem;font-size:0.85rem;border-radius:8px;color:var(--gray);display:block;cursor:pointer;}
+.dropdown a:hover{background:var(--orange-pale);color:var(--orange);}
+.nav-right{display:flex;align-items:center;gap:1rem;}
+.nav-phone{font-size:0.82rem;color:var(--gray);font-weight:500;}
+.nav-cta{background:var(--orange);color:#fff;padding:0.52rem 1.3rem;border-radius:50px;font-size:0.85rem;font-weight:500;text-decoration:none;transition:all 0.2s;border:none;cursor:pointer;white-space:nowrap;}
+.nav-cta:hover{background:var(--orange-dark);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--orange);border-radius:2px;transition:all 0.3s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid rgba(232,98,10,0.1);padding:1rem 5%;z-index:190;flex-direction:column;gap:0;max-height:calc(100vh - 72px);overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{color:var(--gray);text-decoration:none;font-weight:500;padding:0.8rem 0;border-bottom:1px solid rgba(0,0,0,0.04);font-size:0.95rem;}
+.mobile-menu a:last-child{border:none;}
+.mob-section-title{font-size:0.72rem;font-weight:600;color:var(--orange);letter-spacing:1px;text-transform:uppercase;padding:1rem 0 0.3rem;border:none !important;}
+
+/* ====== PAGE SYSTEM ====== */
+.page{display:none;animation:fadeUp 0.45s ease;}
+.page.active{display:block;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+
+/* ====== SHARED ====== */
+.pt-nav{padding-top:72px;}
+section{padding:80px 5%;}
+.container{max-width:1200px;margin:0 auto;}
+.section-tag{display:inline-block;background:var(--orange-pale);color:var(--orange);font-size:0.75rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:0.3rem 1rem;border-radius:50px;margin-bottom:0.8rem;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:800;color:var(--dark);line-height:1.12;letter-spacing:-0.3px;margin-bottom:0.8rem;}
+.section-sub{color:var(--gray);font-size:1rem;line-height:1.7;max-width:560px;}
+.section-header{margin-bottom:3rem;}
+.btn-primary{background:var(--orange);color:#fff;padding:0.8rem 2rem;border-radius:50px;font-weight:500;text-decoration:none;font-size:0.95rem;transition:all 0.25s;border:none;cursor:pointer;display:inline-block;}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(232,98,10,0.4);}
+.btn-outline{background:transparent;color:var(--dark);padding:0.8rem 2rem;border-radius:50px;font-weight:500;text-decoration:none;font-size:0.95rem;border:1.5px solid rgba(0,0,0,0.15);transition:all 0.25s;display:inline-block;}
+.btn-outline:hover{border-color:var(--orange);color:var(--orange);}
+.btn-outline-white{background:transparent;color:#fff;padding:0.8rem 2rem;border-radius:50px;font-weight:500;text-decoration:none;font-size:0.95rem;border:1.5px solid rgba(255,255,255,0.3);transition:all 0.25s;display:inline-block;}
+.btn-outline-white:hover{border-color:var(--orange-light);color:var(--orange-light);}
+.fade-in{opacity:0;transform:translateY(22px);transition:opacity 0.55s ease,transform 0.55s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+
+/* ====== HOME — HERO ====== */
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 5% 60px;position:relative;overflow:hidden;background:linear-gradient(140deg,#1A1208 0%,#2E1F0A 45%,#3D2810 100%);}
+.hero-bg-circle{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(232,98,10,0.22) 0%,transparent 70%);top:-150px;right:-80px;pointer-events:none;}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.06) 1px,transparent 1px);background-size:32px 32px;pointer-events:none;}
+.hero-content{position:relative;z-index:2;max-width:620px;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,98,10,0.15);border:1px solid rgba(232,98,10,0.3);color:var(--orange-mid);padding:0.4rem 1rem;border-radius:50px;font-size:0.78rem;font-weight:500;margin-bottom:1.5rem;letter-spacing:0.5px;}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5.5vw,4.2rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-0.5px;margin-bottom:1.2rem;}
+h1 .accent{color:var(--orange-light);}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.58);line-height:1.75;margin-bottom:2rem;max-width:480px;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.08);flex-wrap:wrap;}
+.stat-num{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--orange-light);}
+.stat-label{font-size:0.78rem;color:rgba(255,255,255,0.4);margin-top:3px;}
+.hero-visual{position:absolute;right:4%;bottom:0;width:44%;max-width:500px;z-index:1;opacity:0.88;}
+
+/* HOME — SERVICES STRIP */
+.services-strip{background:#fff;padding:70px 5%;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;}
+.service-card{background:var(--light);border:1px solid rgba(232,98,10,0.1);border-radius:var(--radius);padding:1.8rem;transition:all 0.3s;cursor:pointer;position:relative;overflow:hidden;}
+.service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform 0.3s;}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(232,98,10,0.1);border-color:rgba(232,98,10,0.22);}
+.service-card:hover::after{transform:scaleX(1);}
+.service-icon{width:50px;height:50px;background:var(--orange-pale);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.1rem;}
+.service-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;color:var(--dark);}
+.service-card p{font-size:0.88rem;color:var(--gray);line-height:1.65;}
+.services-more{text-align:center;margin-top:2rem;}
+
+/* HOME — CALCULATOR */
+.calculator{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);color:#fff;padding:80px 5%;}
+.calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.calc-form label{display:block;font-size:0.84rem;color:rgba(255,255,255,0.5);margin-bottom:0.45rem;font-weight:500;}
+.calc-form input[type=range]{width:100%;margin-bottom:0.3rem;accent-color:var(--orange);}
+.range-val{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--orange-light);}
+.calc-form select{width:100%;padding:0.7rem 1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);color:#fff;font-size:0.9rem;margin-bottom:1.5rem;outline:none;}
+.calc-form select option{background:#2E1F0A;}
+.calc-results{background:rgba(255,255,255,0.05);border:1px solid rgba(232,98,10,0.2);border-radius:var(--radius);padding:2rem;}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:0.85rem 0;border-bottom:1px solid rgba(255,255,255,0.06);}
+.result-row:last-child{border:none;}
+.result-label{font-size:0.86rem;color:rgba(255,255,255,0.48);}
+.result-val{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--orange-light);}
+.range-group{margin-bottom:1.5rem;}
+.range-meta{display:flex;justify-content:space-between;font-size:0.76rem;color:rgba(255,255,255,0.28);}
+.calc-note{font-size:0.78rem;color:rgba(255,255,255,0.28);margin-top:1rem;line-height:1.5;}
+/* Countdown */
+.cd-box{background:rgba(255,255,255,0.08);border:1px solid rgba(232,98,10,0.25);border-radius:10px;padding:0.6rem 0.9rem;text-align:center;min-width:62px;}
+.cd-num{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:var(--orange-light);line-height:1;}
+.cd-label{font-size:0.65rem;color:rgba(255,255,255,0.35);margin-top:3px;text-transform:uppercase;letter-spacing:0.5px;}
+.cd-sep{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:var(--orange-mid);align-self:center;margin-top:-8px;}
+
+/* HOME — PROCESS */
+.process{background:var(--light);padding:80px 5%;}
+.process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;position:relative;}
+.process-steps::after{content:'';position:absolute;top:38px;left:8%;right:8%;height:1px;background:var(--orange);z-index:0;opacity:0.15;}
+.step{text-align:center;padding:1.4rem 0.8rem;position:relative;z-index:1;}
+.step-num{width:52px;height:52px;border-radius:50%;background:var(--orange);color:#fff;font-family:'Playfair Display',serif;font-weight:900;font-size:1.15rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 4px 15px rgba(232,98,10,0.35);}
+.step h4{font-family:'Playfair Display',serif;font-size:0.98rem;font-weight:700;margin-bottom:0.4rem;}
+.step p{font-size:0.81rem;color:var(--gray);line-height:1.6;}
+
+/* HOME — TESTIMONIALS */
+.testimonials{background:var(--orange-pale);padding:80px 5%;}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;}
+.testi-card{background:#fff;border-radius:var(--radius);padding:1.8rem;box-shadow:0 2px 12px rgba(232,98,10,0.06);}
+.stars{color:var(--sun);font-size:1rem;letter-spacing:2px;margin-bottom:0.8rem;}
+.testi-text{font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1.2rem;font-style:italic;}
+.testi-author{display:flex;align-items:center;gap:0.8rem;}
+.avatar{width:40px;height:40px;border-radius:50%;background:var(--orange);color:#fff;font-family:'Playfair Display',serif;font-weight:700;font-size:0.85rem;display:flex;align-items:center;justify-content:center;}
+.author-name{font-weight:600;font-size:0.88rem;}
+.author-loc{font-size:0.76rem;color:var(--gray);}
+
+/* HOME — WHY */
+.why{background:#fff;padding:80px 5%;}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.why-features{display:flex;flex-direction:column;gap:1.4rem;}
+.feature{display:flex;gap:1.1rem;align-items:flex-start;}
+.feature-icon{width:44px;height:44px;border-radius:10px;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+.feature h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:0.3rem;}
+.feature p{font-size:0.86rem;color:var(--gray);line-height:1.65;}
+.why-visual{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);border-radius:20px;padding:2.2rem;display:flex;flex-direction:column;gap:0.9rem;}
+.kpi-card{background:rgba(255,255,255,0.06);border:1px solid rgba(232,98,10,0.18);border-radius:12px;padding:1.1rem 1.4rem;display:flex;justify-content:space-between;align-items:center;}
+.kpi-label{font-size:0.83rem;color:rgba(255,255,255,0.48);}
+.kpi-val{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:900;color:var(--orange-light);}
+
+/* ====== SERVICES PAGE ====== */
+.page-hero{background:linear-gradient(140deg,var(--dark) 0%,var(--dark2) 100%);padding:130px 5% 70px;position:relative;overflow:hidden;}
+.page-hero-dot{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.05) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;}
+.page-hero h2{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.5rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:1rem;}
+.page-hero p{color:rgba(255,255,255,0.55);font-size:1.05rem;max-width:540px;line-height:1.7;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:0.8rem;color:rgba(255,255,255,0.35);margin-bottom:1.2rem;}
+.breadcrumb span{color:var(--orange-mid);}
+.breadcrumb a{color:rgba(255,255,255,0.4);cursor:pointer;}
+.breadcrumb a:hover{color:var(--orange-mid);}
+.services-full{background:#fff;padding:80px 5%;}
+.service-full-card{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:3rem;background:var(--light);border:1px solid rgba(232,98,10,0.1);border-radius:20px;margin-bottom:2rem;}
+.service-full-card.reverse{direction:rtl;}
+.service-full-card.reverse>*{direction:ltr;}
+.sfcard-icon{font-size:3rem;margin-bottom:1rem;}
+.sfcard-tag{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--orange);margin-bottom:0.5rem;}
+.sfcard-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;color:var(--dark);margin-bottom:0.8rem;line-height:1.2;}
+.sfcard-desc{color:var(--gray);font-size:0.92rem;line-height:1.7;margin-bottom:1.2rem;}
+.sfcard-points{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.sfcard-points li{font-size:0.88rem;color:var(--gray);display:flex;align-items:center;gap:8px;}
+.sfcard-points li::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0;}
+.sfcard-visual{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);border-radius:16px;padding:2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:220px;}
+.sfcard-num{font-family:'Playfair Display',serif;font-size:4rem;font-weight:900;color:var(--orange-light);line-height:1;}
+.sfcard-numlabel{font-size:0.85rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;}
+.pricing-section{background:var(--orange-pale);padding:80px 5%;}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;}
+.price-card{background:#fff;border-radius:var(--radius);padding:2rem;text-align:center;border:1.5px solid rgba(232,98,10,0.1);transition:all 0.3s;}
+.price-card.featured{border-color:var(--orange);box-shadow:0 8px 30px rgba(232,98,10,0.15);}
+.price-tag-badge{display:inline-block;background:var(--orange);color:#fff;font-size:0.72rem;font-weight:600;letter-spacing:0.5px;padding:0.2rem 0.7rem;border-radius:50px;margin-bottom:1rem;}
+.price-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:800;margin-bottom:0.3rem;}
+.price-range{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--orange);margin:0.8rem 0;}
+.price-range small{font-size:0.85rem;font-family:'DM Sans',sans-serif;color:var(--gray);font-weight:400;}
+.price-card ul{list-style:none;text-align:left;margin:1rem 0;display:flex;flex-direction:column;gap:0.5rem;}
+.price-card ul li{font-size:0.85rem;color:var(--gray);display:flex;gap:7px;align-items:flex-start;}
+.price-card ul li::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0;}
+
+/* ====== ABOUT PAGE ====== */
+.about-story{background:#fff;padding:80px 5%;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.about-img-box{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);border-radius:20px;padding:3rem;text-align:center;position:relative;overflow:hidden;}
+.about-img-box::before{content:'☀';position:absolute;top:-20px;right:-20px;font-size:8rem;opacity:0.05;}
+.big-stat{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:900;color:var(--orange-light);line-height:1;}
+.big-stat-label{font-size:0.9rem;color:rgba(255,255,255,0.45);margin-top:0.5rem;}
+.about-mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;}
+.mini-stat{background:rgba(255,255,255,0.06);border-radius:12px;padding:1rem;text-align:center;}
+.mini-stat-num{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:var(--orange-light);}
+.mini-stat-label{font-size:0.75rem;color:rgba(255,255,255,0.38);margin-top:3px;}
+.about-text h2{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--dark);line-height:1.15;margin-bottom:1rem;}
+.about-text p{color:var(--gray);font-size:0.92rem;line-height:1.75;margin-bottom:1rem;}
+.team-section{background:var(--light);padding:80px 5%;}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
+.team-card{background:#fff;border-radius:var(--radius);padding:2rem;text-align:center;border:1px solid rgba(232,98,10,0.08);transition:all 0.3s;}
+.team-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(232,98,10,0.1);}
+.team-avatar{width:72px;height:72px;border-radius:50%;background:var(--orange);color:#fff;font-family:'Playfair Display',serif;font-weight:900;font-size:1.3rem;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;}
+.team-card h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:800;margin-bottom:0.3rem;}
+.team-card .role{font-size:0.8rem;color:var(--orange);font-weight:600;margin-bottom:0.5rem;}
+.team-card p{font-size:0.82rem;color:var(--gray);line-height:1.6;}
+.values-section{background:#fff;padding:80px 5%;}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
+.value-card{padding:2rem;border-left:3px solid var(--orange);background:var(--light);border-radius:0 var(--radius) var(--radius) 0;}
+.value-card .vi{font-size:1.8rem;margin-bottom:0.8rem;}
+.value-card h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:800;margin-bottom:0.4rem;}
+.value-card p{font-size:0.85rem;color:var(--gray);line-height:1.6;}
+
+/* ====== PROJECTS PAGE ====== */
+.projects-section{background:#fff;padding:80px 5%;}
+.project-filters{display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+.filter-btn{padding:0.45rem 1.1rem;border-radius:50px;font-size:0.83rem;font-weight:500;border:1.5px solid rgba(232,98,10,0.18);background:transparent;color:var(--gray);cursor:pointer;transition:all 0.2s;}
+.filter-btn:hover,.filter-btn.active{background:var(--orange);color:#fff;border-color:var(--orange);}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
+.project-card{background:var(--light);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(232,98,10,0.08);transition:all 0.3s;}
+.project-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(232,98,10,0.1);}
+.project-thumb{height:180px;background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;position:relative;overflow:hidden;}
+.project-thumb::before{content:'☀';position:absolute;font-size:6rem;opacity:0.06;top:-10px;right:-10px;}
+.project-thumb .kw-badge{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--orange-light);}
+.project-thumb .kw-unit{font-size:0.85rem;color:rgba(255,255,255,0.4);}
+.project-thumb .type-badge{position:absolute;top:12px;left:12px;background:rgba(232,98,10,0.25);border:1px solid rgba(232,98,10,0.3);color:var(--orange-mid);font-size:0.72rem;font-weight:600;padding:0.25rem 0.7rem;border-radius:50px;}
+.project-info{padding:1.4rem;}
+.project-info h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:800;margin-bottom:0.35rem;}
+.project-info p{font-size:0.83rem;color:var(--gray);margin-bottom:0.8rem;line-height:1.55;}
+.project-meta{display:flex;gap:1rem;flex-wrap:wrap;}
+.pmeta{font-size:0.75rem;color:var(--gray);display:flex;align-items:center;gap:4px;}
+.pmeta strong{color:var(--orange);}
+.stats-section{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);padding:60px 5%;}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2rem;text-align:center;}
+.big-kpi .num{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:var(--orange-light);}
+.big-kpi .label{font-size:0.82rem;color:rgba(255,255,255,0.4);margin-top:4px;}
+
+/* ====== BLOG PAGE ====== */
+.blog-section{background:#fff;padding:80px 5%;}
+.blog-grid{display:grid;grid-template-columns:2fr 1fr;gap:3rem;}
+.blog-main .blog-card{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(232,98,10,0.1);margin-bottom:2rem;background:var(--light);transition:box-shadow 0.3s;}
+.blog-card:hover{box-shadow:0 8px 25px rgba(232,98,10,0.1);}
+.blog-thumb{height:200px;background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;}
+.blog-thumb .blog-cat{position:absolute;top:12px;left:12px;background:var(--orange);color:#fff;font-size:0.72rem;font-weight:600;padding:0.25rem 0.8rem;border-radius:50px;}
+.blog-body{padding:1.6rem;}
+.blog-meta{font-size:0.78rem;color:var(--gray);margin-bottom:0.6rem;}
+.blog-body h3{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:800;color:var(--dark);margin-bottom:0.6rem;line-height:1.3;}
+.blog-body p{font-size:0.88rem;color:var(--gray);line-height:1.7;margin-bottom:1rem;}
+.read-more{font-size:0.83rem;color:var(--orange);font-weight:600;cursor:pointer;text-decoration:none;}
+.blog-sidebar .sidebar-widget{background:var(--light);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;border:1px solid rgba(232,98,10,0.08);}
+.sidebar-widget h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:800;margin-bottom:1rem;color:var(--dark);}
+.sidebar-post{display:flex;gap:0.8rem;padding:0.6rem 0;border-bottom:1px solid rgba(0,0,0,0.05);}
+.sidebar-post:last-child{border:none;}
+.sp-icon{width:44px;height:44px;border-radius:8px;background:var(--orange-pale);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+.sp-title{font-size:0.83rem;font-weight:500;line-height:1.4;color:var(--dark);}
+.sp-date{font-size:0.75rem;color:var(--gray);margin-top:2px;}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:0.5rem;}
+.tag{padding:0.3rem 0.8rem;background:#fff;border:1px solid rgba(232,98,10,0.15);border-radius:50px;font-size:0.78rem;color:var(--gray);cursor:pointer;transition:all 0.2s;}
+.tag:hover{background:var(--orange);color:#fff;border-color:var(--orange);}
+
+/* ====== CONTACT PAGE ====== */
+.contact-full{background:#fff;padding:80px 5%;}
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;}
+.contact-info h3{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--dark);margin-bottom:0.8rem;}
+.contact-info>p{color:var(--gray);font-size:0.92rem;line-height:1.75;margin-bottom:2rem;}
+.contact-item{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.3rem;}
+.contact-icon{width:44px;height:44px;background:var(--orange-pale);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.c-label{font-size:0.75rem;color:var(--gray);margin-bottom:2px;font-weight:500;}
+.c-val{font-size:0.92rem;font-weight:500;color:var(--dark);}
+.form-group{margin-bottom:1.1rem;}
+.form-group label{display:block;font-size:0.82rem;color:var(--gray);margin-bottom:0.4rem;font-weight:500;}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:0.75rem 1rem;border:1.5px solid rgba(0,0,0,0.08);border-radius:10px;font-family:'DM Sans',sans-serif;font-size:0.9rem;background:#fff;color:var(--dark);outline:none;transition:border 0.2s;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(232,98,10,0.09);}
+.form-group textarea{resize:vertical;min-height:110px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-success{display:none;background:var(--orange-pale);border:1px solid rgba(232,98,10,0.2);border-radius:10px;padding:1rem 1.2rem;font-size:0.9rem;color:var(--orange-dark);text-align:center;margin-top:1rem;}
+.map-section{background:var(--light);padding:80px 5%;}
+.districts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:0.8rem;margin-top:2rem;}
+.district-pill{background:#fff;border:1px solid rgba(232,98,10,0.12);border-radius:50px;padding:0.45rem 1rem;font-size:0.82rem;color:var(--gray);text-align:center;transition:all 0.2s;cursor:pointer;}
+.district-pill:hover{background:var(--orange);color:#fff;border-color:var(--orange);}
+
+/* ====== FOOTER ====== */
+footer{background:var(--dark);color:rgba(255,255,255,0.6);padding:55px 5% 30px;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.footer-brand .nav-logo{font-size:1.5rem;display:block;margin-bottom:1rem;color:var(--orange);}
+.footer-brand p{font-size:0.86rem;line-height:1.75;}
+.footer-col h4{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:#fff;margin-bottom:1rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.55rem;}
+.footer-col ul a{color:rgba(255,255,255,0.48);text-decoration:none;font-size:0.86rem;transition:color 0.2s;cursor:pointer;}
+.footer-col ul a:hover{color:var(--orange-light);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-bottom p{font-size:0.8rem;}
+.solar-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(232,98,10,0.12);color:var(--orange-mid);padding:0.3rem 0.8rem;border-radius:50px;font-size:0.76rem;}
+
+/* ====== FLOATING CTA ====== */
+.floating-cta{position:fixed;bottom:28px;right:28px;z-index:50;background:var(--orange);color:#fff;padding:0.75rem 1.4rem;border-radius:50px;box-shadow:0 6px 25px rgba(232,98,10,0.45);text-decoration:none;font-weight:600;font-size:0.88rem;display:flex;align-items:center;gap:7px;transition:all 0.25s;border:none;cursor:pointer;}
+.floating-cta:hover{background:var(--orange-dark);transform:translateY(-3px);box-shadow:0 10px 30px rgba(232,98,10,0.55);}
+@keyframes pulse{0%,100%{box-shadow:0 6px 25px rgba(232,98,10,0.45);}50%{box-shadow:0 6px 35px rgba(232,98,10,0.75);}}
+.pulse{animation:pulse 2.5s infinite;}
+
+/* ====== RESPONSIVE — TABLET (≤960px) ====== */
+@media(max-width:960px){
+  /* Nav */
+  .nav-links,.nav-right{display:none;}
+  .hamburger{display:flex;}
+
+  /* Grids → single column */
+  .calc-wrap,.why-grid,.about-grid,.contact-grid,.blog-grid{grid-template-columns:1fr;}
+  .service-full-card{grid-template-columns:1fr;}
+  .service-full-card.reverse{direction:ltr;}
+  .form-row{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+
+  /* Hero */
+  .hero-visual{display:none;}
+  .hero{min-height:auto;padding:110px 5% 60px;}
+  .hero-stats{gap:1.5rem;}
+
+  /* Process */
+  .process-steps::after{display:none;}
+  .process-steps{grid-template-columns:repeat(2,1fr);gap:1rem;}
+
+  /* Service full cards */
+  .sfcard-visual{min-height:140px;}
+
+  /* Blog */
+  .blog-grid{grid-template-columns:1fr;}
+
+  /* About */
+  .about-mini-stats{grid-template-columns:repeat(2,1fr);}
+
+  /* Countdown */
+  #countdown-wrap{justify-content:center;}
+}
+
+/* ====== RESPONSIVE — MOBILE (≤640px) ====== */
+@media(max-width:640px){
+  /* Global spacing */
+  section{padding:50px 4%;}
+  .calculator,.process,.testimonials,.why,.services-strip{padding:50px 4%;}
+  .page-hero{padding:100px 4% 44px;}
+  .services-full{padding:50px 4%;}
+
+  /* Nav */
+  nav{height:62px;padding:0 4%;}
+  .pt-nav{padding-top:62px;}
+  .nav-logo{font-size:1.2rem;}
+  .mobile-menu{top:62px;padding:0.8rem 4%;}
+
+  /* Hero */
+  .hero{padding:90px 4% 50px;}
+  h1{font-size:2rem;letter-spacing:-0.3px;}
+  .hero-sub{font-size:0.93rem;}
+  .hero-badge{font-size:0.72rem;padding:0.35rem 0.85rem;}
+  .hero-btns{flex-direction:column;gap:0.75rem;}
+  .hero-btns .btn-primary,.hero-btns .btn-outline-white{width:100%;text-align:center;padding:0.85rem 1rem;}
+  .hero-stats{gap:1.2rem;margin-top:2rem;padding-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;}
+  .stat-num{font-size:1.5rem;}
+  .stat-label{font-size:0.72rem;}
+
+  /* Section titles */
+  .section-title{font-size:1.7rem;}
+  .section-tag{font-size:0.7rem;}
+
+  /* Services strip */
+  .services-grid{grid-template-columns:1fr;}
+  .service-card{padding:1.4rem;}
+
+  /* Calculator */
+  .calculator{padding:50px 4%;}
+  .calc-wrap{gap:2rem;}
+  .calc-results{padding:1.4rem;}
+  /* Countdown banner */
+  #countdown-wrap{flex-wrap:wrap;gap:0.5rem;justify-content:center;}
+  .cd-box{min-width:52px;padding:0.5rem 0.6rem;}
+  .cd-num{font-size:1.3rem;}
+  .cd-sep{font-size:1.2rem;}
+
+  /* Process */
+  .process-steps{grid-template-columns:1fr;max-width:320px;margin:0 auto;}
+  .step{padding:1.2rem 0.5rem;}
+
+  /* Why us */
+  .why{padding:50px 4%;}
+  .why-grid{gap:2rem;}
+  .why-visual{padding:1.5rem;}
+  .kpi-card{padding:0.9rem 1rem;}
+  .kpi-val{font-size:1rem;}
+
+  /* Testimonials */
+  .testi-grid{grid-template-columns:1fr;}
+  .testi-card{padding:1.4rem;}
+
+  /* Page hero */
+  .page-hero h2{font-size:1.9rem;}
+  .page-hero p{font-size:0.92rem;}
+
+  /* Services full page */
+  .service-full-card{padding:1.4rem;border-radius:14px;gap:1.5rem;}
+  .sfcard-title{font-size:1.3rem;}
+  .sfcard-visual{min-height:110px;padding:1.4rem;}
+  .sfcard-num{font-size:2.8rem;}
+
+  /* Projects */
+  .project-filters{gap:0.4rem;}
+  .filter-btn{padding:0.38rem 0.85rem;font-size:0.78rem;}
+  .projects-grid{grid-template-columns:1fr;}
+  .stats-row{grid-template-columns:1fr 1fr;gap:1.5rem;}
+  .big-kpi .num{font-size:2rem;}
+
+  /* About */
+  .about-story{padding:50px 4%;}
+  .team-section,.values-section{padding:50px 4%;}
+  .about-img-box{padding:2rem 1.5rem;}
+  .big-stat{font-size:3.5rem;}
+  .team-grid{grid-template-columns:1fr 1fr;}
+  .values-grid{grid-template-columns:1fr;}
+
+  /* Blog */
+  .blog-section{padding:50px 4%;}
+  .blog-grid{gap:2rem;}
+  .blog-thumb{height:150px;font-size:3rem;}
+  .blog-body{padding:1.2rem;}
+  .blog-body h3{font-size:1.05rem;}
+
+  /* Contact */
+  .contact-full{padding:50px 4%;}
+  .contact-grid{gap:2.5rem;}
+  .contact-info h3{font-size:1.4rem;}
+  .map-section{padding:50px 4%;}
+  .districts-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:0.6rem;}
+  .district-pill{font-size:0.76rem;padding:0.38rem 0.7rem;}
+
+  /* Footer */
+  footer{padding:40px 4% 24px;}
+  .footer-top{grid-template-columns:1fr;gap:2rem;}
+  .footer-bottom{flex-direction:column;text-align:center;gap:0.8rem;}
+
+  /* Buttons */
+  .btn-primary,.btn-outline,.btn-outline-white{padding:0.75rem 1.5rem;font-size:0.9rem;}
+
+  /* Floating CTA */
+  .floating-cta{bottom:16px;right:16px;padding:0.65rem 1.1rem;font-size:0.82rem;}
+
+  /* Form */
+  .form-group input,.form-group select,.form-group textarea{font-size:16px;}/* prevents iOS zoom */
+}
+
+/* ====== RESPONSIVE — SMALL MOBILE (≤380px) ====== */
+@media(max-width:380px){
+  h1{font-size:1.75rem;}
+  .section-title{font-size:1.5rem;}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:1rem;}
+  .team-grid{grid-template-columns:1fr;}
+  .cd-box{min-width:46px;}
+  .cd-num{font-size:1.15rem;}
+  .sfcard-num{font-size:2.2rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<nav>
+  <a class="nav-logo" onclick="showPage('home')"><span>Obilio</span> Renewables</a>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+    <li class="has-dropdown">
+      <a onclick="showPage('services')" id="nav-services">Services ▾</a>
+      <div class="dropdown">
+        <div class="dropdown-inner">
+          <a onclick="showPage('services');scrollToSection('svc-residential')">🏠 Residential Solar</a>
+          <a onclick="showPage('services');scrollToSection('svc-commercial')">🏢 Commercial Solar</a>
+          <a onclick="showPage('services');scrollToSection('svc-industrial')">🏭 Industrial Solar</a>
+          <a onclick="showPage('services');scrollToSection('svc-battery')">🔋 Battery Storage</a>
+          <a onclick="showPage('services');scrollToSection('svc-ev')">⚡ EV Charger</a>
+          <a onclick="showPage('services');scrollToSection('svc-subsidy')">📋 Subsidy Assistance</a>
+        </div>
+      </div>
+    </li>
+    <li><a onclick="showPage('projects')" id="nav-projects">Projects</a></li>
+    <li><a onclick="showPage('about')" id="nav-about">About Us</a></li>
+    <li><a onclick="showPage('blog')" id="nav-blog">Blog</a></li>
+    <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-phone">📞 +91 95970 95456</span>
+    <button class="nav-cta" onclick="showPage('contact')">Free Quote</button>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('home');toggleMenu()">🏠 Home</a>
+  <span class="mob-section-title">Services</span>
+  <a onclick="showPage('services');toggleMenu()" style="padding-left:1rem;">Residential Solar</a>
+  <a onclick="showPage('services');toggleMenu()" style="padding-left:1rem;">Commercial Solar</a>
+  <a onclick="showPage('services');toggleMenu()" style="padding-left:1rem;">Industrial Solar</a>
+  <a onclick="showPage('services');toggleMenu()" style="padding-left:1rem;">Battery Storage</a>
+  <a onclick="showPage('services');toggleMenu()" style="padding-left:1rem;">EV Charger</a>
+  <a onclick="showPage('projects');toggleMenu()">📂 Projects</a>
+  <a onclick="showPage('about');toggleMenu()">👥 About Us</a>
+  <a onclick="showPage('blog');toggleMenu()">📰 Blog</a>
+  <a onclick="showPage('contact');toggleMenu()">✉️ Contact / Get Quote</a>
+</div>
+
+<!-- ================= HOME PAGE ================= -->
+<div id="page-home" class="page active pt-nav">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-dots"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Tamil Nadu & Pondicherry's Trusted Solar Partner</div>
+      <h1>Power Your Home<br>with <span class="accent">Clean Solar</span><br>Energy</h1>
+      <p class="hero-sub">Professional solar installations across Chennai, Coimbatore, Madurai, Pondicherry & all of Tamil Nadu. Cut your electricity bill by up to 90%.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('contact')">Get Free Site Survey</button>
+        <button class="btn-outline-white" onclick="document.getElementById('home-calc').scrollIntoView({behavior:'smooth'})">Calculate Savings</button>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">50+</div><div class="stat-label">Installations Done</div></div>
+        <div><div class="stat-num">250 kW+</div><div class="stat-label">Total Capacity</div></div>
+        <div><div class="stat-num">25 Yr</div><div class="stat-label">Panel Warranty</div></div>
+        <div><div class="stat-num">TN & PY</div><div class="stat-label">Coverage</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+        <circle cx="380" cy="80" r="60" fill="rgba(255,184,48,0.12)"/>
+        <circle cx="380" cy="80" r="38" fill="rgba(255,184,48,0.2)"/>
+        <circle cx="380" cy="80" r="22" fill="#FFB830"/>
+        <g stroke="#FFB830" stroke-width="2" opacity="0.35">
+          <line x1="380" y1="28" x2="380" y2="12"/><line x1="380" y1="132" x2="380" y2="148"/>
+          <line x1="328" y1="80" x2="312" y2="80"/><line x1="432" y1="80" x2="448" y2="80"/>
+          <line x1="343" y1="43" x2="331" y2="31"/><line x1="417" y1="43" x2="429" y2="31"/>
+          <line x1="343" y1="117" x2="331" y2="129"/><line x1="417" y1="117" x2="429" y2="129"/>
+        </g>
+        <polygon points="250,140 135,225 365,225" fill="rgba(232,98,10,0.55)"/>
+        <rect x="168" y="225" width="164" height="118" fill="rgba(255,255,255,0.07)" rx="2"/>
+        <rect x="213" y="262" width="74" height="81" fill="rgba(232,98,10,0.28)" rx="3"/>
+        <rect x="173" y="183" width="36" height="23" fill="#1A6BAA" rx="2"/>
+        <rect x="214" y="167" width="36" height="23" fill="#1A6BAA" rx="2"/>
+        <rect x="254" y="167" width="36" height="23" fill="#1A6BAA" rx="2"/>
+        <rect x="294" y="183" width="36" height="23" fill="#1A6BAA" rx="2"/>
+        <line x1="173" y1="194" x2="209" y2="194" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <line x1="191" y1="183" x2="191" y2="206" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <line x1="214" y1="178" x2="250" y2="178" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <line x1="232" y1="167" x2="232" y2="190" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <path d="M380 80 Q320 120 280 162" stroke="rgba(255,184,48,0.45)" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+        <ellipse cx="250" cy="355" rx="185" ry="14" fill="rgba(255,255,255,0.03)"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Services Strip -->
+  <div class="services-strip">
+    <div class="section-header fade-in">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-title">Complete Solar Solutions</h2>
+      <p class="section-sub">From home rooftops to large industrial plants — design, supply, installation, and lifetime support.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in"><div class="service-icon">🏠</div><h3>Residential Solar</h3><p>1–10 kW rooftop systems with TNEB net metering. Sell surplus power back to the grid.</p></div>
+      <div class="service-card fade-in"><div class="service-icon">🏢</div><h3>Commercial Solar</h3><p>10–500 kW for shops, malls, offices. Cut opex with clean, reliable solar power.</p></div>
+      <div class="service-card fade-in"><div class="service-icon">🏭</div><h3>Industrial Solar</h3><p>Large ground-mount & rooftop systems. Custom design with load analysis and ROI forecast.</p></div>
+      <div class="service-card fade-in"><div class="service-icon">🔋</div><h3>Battery Storage</h3><p>Lithium-ion backup systems. Power your home during outages, store surplus generation.</p></div>
+      <div class="service-card fade-in"><div class="service-icon">🔧</div><h3>AMC & Maintenance</h3><p>Annual maintenance contracts — panel cleaning, inverter checks, performance monitoring.</p></div>
+      <div class="service-card fade-in"><div class="service-icon">📋</div><h3>Subsidy Assistance</h3><p>We handle all MNRE & Tamil Nadu subsidy paperwork and DISCOM net-metering applications.</p></div>
+    </div>
+    <div class="services-more"><button class="btn-outline" onclick="showPage('services')">View All Services & Pricing →</button></div>
+  </div>
+
+  <!-- Savings Calculator -->
+  <div class="calculator" id="home-calc">
+    <!-- SUBSIDY COUNTDOWN -->
+    <div class="fade-in" style="background:rgba(232,98,10,0.12);border:1px solid rgba(232,98,10,0.3);border-radius:18px;padding:1.8rem 2rem;margin-bottom:3rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem;">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.4rem;">
+          <span style="font-size:1.3rem;">🔥</span>
+          <span style="font-size:0.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--orange-mid);">Limited Time — Government Subsidy Alert</span>
+        </div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:#fff;line-height:1.2;">Get <span style="color:var(--orange-light);">₹78,000</span> Subsidy Before It Expires!</div>
+        <div style="font-size:0.88rem;color:rgba(255,255,255,0.5);margin-top:0.4rem;">PM Surya Ghar subsidy deadline: <strong style="color:var(--orange-mid);">31 March 2027</strong>. Install now — don't miss out.</div>
+      </div>
+      <div style="display:flex;gap:0.8rem;flex-shrink:0;" id="countdown-wrap">
+        <div class="cd-box"><div class="cd-num" id="cd-days">000</div><div class="cd-label">Days</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><div class="cd-num" id="cd-hours">00</div><div class="cd-label">Hrs</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><div class="cd-num" id="cd-mins">00</div><div class="cd-label">Mins</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><div class="cd-num" id="cd-secs">00</div><div class="cd-label">Secs</div></div>
+      </div>
+    </div>
+    <div class="section-header fade-in">
+      <span class="section-tag" style="background:rgba(232,98,10,0.18);color:var(--orange-mid);">Savings Estimator</span>
+    </div>
+    <div class="calc-wrap fade-in">
+      <div class="calc-form">
+        <div class="range-group">
+          <label>Monthly Electricity Bill (₹)</label>
+          <input type="range" id="bill" min="500" max="20000" value="3000" step="500" oninput="calcSavings()"/>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span class="range-meta">₹500</span>
+            <span class="range-val">₹<span id="billVal">3,000</span></span>
+            <span class="range-meta">₹20,000</span>
+          </div>
+        </div>
+        <div class="range-group">
+          <label>System Size (kW)</label>
+          <input type="range" id="kw" min="1" max="20" value="3" step="0.5" oninput="calcSavings()"/>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span class="range-meta">1 kW</span>
+            <span class="range-val"><span id="kwVal">3</span> kW</span>
+            <span class="range-meta">20 kW</span>
+          </div>
+        </div>
+        <div class="range-group">
+          <label>Roof Area (sq.ft)</label>
+          <input type="range" id="area" min="100" max="5000" value="500" step="50" oninput="calcSavings()"/>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span class="range-meta">100</span>
+            <span class="range-val"><span id="areaVal">500</span> sq.ft</span>
+            <span class="range-meta">5000</span>
+          </div>
+        </div>
+        <label>Subsidy Eligibility</label>
+        <select id="subsidy" onchange="calcSavings()">
+          <option value="0.3">Residential — 30% MNRE Subsidy</option>
+          <option value="0.1">Commercial — 10% Subsidy</option>
+          <option value="0">No Subsidy</option>
+        </select>
+      </div>
+      <div class="calc-results">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:#fff;margin-bottom:1.2rem;">Your Estimated Results</h3>
+        <div class="result-row"><span class="result-label">Annual Units Generated</span><span class="result-val"><span id="units">4,380</span> kWh</span></div>
+        <div class="result-row"><span class="result-label">Annual Savings</span><span class="result-val">₹<span id="savings">30,660</span></span></div>
+        <div class="result-row"><span class="result-label">Payback Period</span><span class="result-val"><span id="payback">4.8</span> Years</span></div>
+        <div class="result-row"><span class="result-label">25-Year Total Savings</span><span class="result-val">₹<span id="lifetime">6,16,500</span></span></div>
+        <button class="btn-primary" style="width:100%;text-align:center;margin-top:1.5rem;" onclick="showPage('contact')">Get Exact Quote →</button>
+        <p class="calc-note">* Based on TN avg. 4.1 peak sun hours/day, ₹7/unit tariff.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process -->
+  <div class="process">
+    <div class="section-header fade-in" style="text-align:center;max-width:580px;margin:0 auto 3rem;">
+      <span class="section-tag">How It Works</span>
+      <h2 class="section-title">Quote to Commissioning in 7 Days</h2>
+    </div>
+    <div class="process-steps">
+      <div class="step fade-in"><div class="step-num">1</div><h4>Free Consultation</h4><p>Share your bill & roof details. We give an instant ballpark estimate.</p></div>
+      <div class="step fade-in"><div class="step-num">2</div><h4>Site Survey</h4><p>Our engineer visits, assesses shading, roof angle, and load.</p></div>
+      <div class="step fade-in"><div class="step-num">3</div><h4>Custom Design</h4><p>Panel layout, inverter sizing, and energy production forecast.</p></div>
+      <div class="step fade-in"><div class="step-num">4</div><h4>Subsidy Filing</h4><p>We file MNRE/DISCOM subsidy and net-metering on your behalf.</p></div>
+      <div class="step fade-in"><div class="step-num">5</div><h4>Installation</h4><p>Certified engineers install panels, inverters, and wiring.</p></div>
+      <div class="step fade-in"><div class="step-num">6</div><h4>Go Live</h4><p>System commissioned, app monitoring set up — you start saving.</p></div>
+    </div>
+  </div>
+
+  <!-- Why Us -->
+  <div class="why">
+    <div class="why-grid">
+      <div class="fade-in">
+        <span class="section-tag">Why Obilio Renewables</span>
+        <h2 class="section-title">Built on Trust,<br>Backed by Quality</h2>
+        <p class="section-sub" style="margin-bottom:2rem;">Tier-1 panels from Adani, Waaree, Tata Solar — with full warranties and transparent pricing.</p>
+        <div class="why-features">
+          <div class="feature"><div class="feature-icon">⚡</div><div><h4>Tier-1 Panels Only</h4><p>Adani, Waaree, Tata Solar panels with 25-year performance warranty — zero compromise.</p></div></div>
+          <div class="feature"><div class="feature-icon">📜</div><div><h4>Licensed & Certified</h4><p>All work by MNRE-empanelled engineers with full electrical clearance documentation.</p></div></div>
+          <div class="feature"><div class="feature-icon">💰</div><div><h4>Zero Hidden Costs</h4><p>Transparent quotes with material, labor, and subsidy broken down clearly.</p></div></div>
+          <div class="feature"><div class="feature-icon">📱</div><div><h4>Live Monitoring App</h4><p>Track energy production, savings, and CO₂ offset in real-time from your phone.</p></div></div>
+        </div>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <button class="btn-primary" onclick="showPage('about')">Our Story →</button>
+          <button class="btn-outline" onclick="showPage('projects')">See Projects →</button>
+        </div>
+      </div>
+      <div class="why-visual fade-in">
+        <h3 style="font-family:'Playfair Display',serif;color:#fff;font-size:1.1rem;margin-bottom:0.4rem;">Cumulative Impact</h3>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-bottom:1.3rem;">Across all Tamil Nadu installations</p>
+        <div class="kpi-card"><span class="kpi-label">🌍 CO₂ Offset / year</span><span class="kpi-val">420 t</span></div>
+        <div class="kpi-card"><span class="kpi-label">⚡ Units Generated / year</span><span class="kpi-val">3.6 Lakh kWh</span></div>
+        <div class="kpi-card"><span class="kpi-label">👨‍👩‍👧 Families Powered</span><span class="kpi-val">50+</span></div>
+        <div class="kpi-card"><span class="kpi-label">💸 Customer Total Savings</span><span class="kpi-val">₹85 L+</span></div>
+        <div class="kpi-card"><span class="kpi-label">🌳 Equivalent Trees Planted</span><span class="kpi-val">19,000+</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials">
+    <div class="section-header fade-in" style="text-align:center;max-width:540px;margin:0 auto 3rem;">
+      <span class="section-tag">Customer Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-in"><div class="stars">★★★★★</div><p class="testi-text">"My monthly EB bill dropped from ₹4,200 to just ₹380. The team was professional and cleaned up perfectly. Highly recommend Obilio!"</p><div class="testi-author"><div class="avatar">RS</div><div><p class="author-name">Ramesh Sundaram</p><p class="author-loc">Adyar, Chennai — 5 kW System</p></div></div></div>
+      <div class="testi-card fade-in"><div class="stars">★★★★★</div><p class="testi-text">"The subsidy paperwork was handled entirely by Obilio. I just signed a few forms and got ₹54,000 back from MNRE. Worth every paisa!"</p><div class="testi-author"><div class="avatar">PK</div><div><p class="author-name">Priya Krishnamurthy</p><p class="author-loc">Coimbatore — 3 kW Residential</p></div></div></div>
+      <div class="testi-card fade-in"><div class="stars">★★★★★</div><p class="testi-text">"Got a 50 kW system for our factory. The ROI projection was accurate — we recovered the cost in 3.5 years. Excellent after-sales service."</p><div class="testi-author"><div class="avatar">VM</div><div><p class="author-name">Vijay Murugan</p><p class="author-loc">SIDCO Madurai — 50 kW Industrial</p></div></div></div>
+    </div>
+  </div>
+
+</div><!-- /home -->
+
+<!-- ================= SERVICES PAGE ================= -->
+<div id="page-services" class="page pt-nav">
+  <div class="page-hero">
+    <div class="page-hero-dot"></div>
+    <div class="breadcrumb"><a onclick="showPage('home')">Home</a> / <span>Services</span></div>
+    <h2>Our Solar Services</h2>
+    <p>End-to-end solar energy solutions for homes, businesses, and industries across Tamil Nadu & Pondicherry — designed, installed, and maintained by certified experts.</p>
+  </div>
+  <div class="services-full">
+    <div id="svc-residential" class="service-full-card fade-in">
+      <div><div class="sfcard-icon">🏠</div><div class="sfcard-tag">Residential</div><h3 class="sfcard-title">Home Rooftop Solar</h3><p class="sfcard-desc">Transform your home into a mini power plant. Our residential systems are designed for maximum shade tolerance and minimal maintenance, tailored to your family's consumption pattern.</p><ul class="sfcard-points"><li>1 kW to 10 kW capacity</li><li>Grid-tied with TNEB net metering</li><li>MNRE 30% subsidy eligible</li><li>25-year panel + 10-year inverter warranty</li><li>Mobile app monitoring included</li></ul><br><button class="btn-primary" onclick="showPage('contact')" style="margin-top:0.5rem;">Get Residential Quote</button></div>
+      <div class="sfcard-visual"><div class="sfcard-num">90%</div><div class="sfcard-numlabel">Average bill reduction</div></div>
+    </div>
+    <div id="svc-commercial" class="service-full-card reverse fade-in">
+      <div><div class="sfcard-icon">🏢</div><div class="sfcard-tag">Commercial</div><h3 class="sfcard-title">Commercial Solar Systems</h3><p class="sfcard-desc">Reduce your business's operational costs with a custom-designed commercial solar installation. Our commercial solutions are engineered for maximum ROI with minimal business disruption.</p><ul class="sfcard-points"><li>10 kW to 500 kW systems</li><li>On-grid, off-grid & hybrid options</li><li>Accelerated depreciation benefit (40%)</li><li>OPEX / CAPEX financing available</li><li>Real-time monitoring dashboard</li></ul><br><button class="btn-primary" onclick="showPage('contact')">Get Commercial Quote</button></div>
+      <div class="sfcard-visual"><div class="sfcard-num">3.5yr</div><div class="sfcard-numlabel">Average payback period</div></div>
+    </div>
+    <div id="svc-industrial" class="service-full-card fade-in">
+      <div><div class="sfcard-icon">🏭</div><div class="sfcard-tag">Industrial</div><h3 class="sfcard-title">Industrial Solar Plants</h3><p class="sfcard-desc">Large-scale rooftop and ground-mounted solar power plants for factories, warehouses, and industrial facilities. We handle everything from feasibility study to grid synchronization.</p><ul class="sfcard-points"><li>500 kW to 5 MW+ systems</li><li>EPC & O&M turnkey model</li><li>Custom energy audit & load analysis</li><li>TANGEDCO high-tension net metering</li><li>Third-party power purchase agreements</li></ul><br><button class="btn-primary" onclick="showPage('contact')">Get Industrial Quote</button></div>
+      <div class="sfcard-visual"><div class="sfcard-num">₹1Cr+</div><div class="sfcard-numlabel">Typical annual savings</div></div>
+    </div>
+    <div id="svc-battery" class="service-full-card reverse fade-in">
+      <div><div class="sfcard-icon">🔋</div><div class="sfcard-tag">Energy Storage</div><h3 class="sfcard-title">Battery Backup Systems</h3><p class="sfcard-desc">Don't let power cuts interrupt your life. Our lithium-ion battery storage systems store your solar surplus and provide reliable backup during outages.</p><ul class="sfcard-points"><li>Lithium-ion & LFP battery options</li><li>2 kWh to 100+ kWh capacity</li><li>Seamless switchover during outages</li><li>Compatible with existing solar systems</li><li>10-year battery warranty</li></ul><br><button class="btn-primary" onclick="showPage('contact')">Get Battery Quote</button></div>
+      <div class="sfcard-visual"><div class="sfcard-num">99.9%</div><div class="sfcard-numlabel">Uptime with backup system</div></div>
+    </div>
+    <div id="svc-ev" class="service-full-card fade-in">
+      <div><div class="sfcard-icon">⚡</div><div class="sfcard-tag">EV Charging</div><h3 class="sfcard-title">EV Charger Installation</h3><p class="sfcard-desc">Charge your electric vehicle at home or your business premises using the clean solar power you generate. We supply and install AC & DC fast chargers compatible with all major EV brands available in India — paired perfectly with your solar system for zero-cost charging.</p><ul class="sfcard-points"><li>AC Level 2 (7.4 kW) & DC Fast Charger (30–60 kW)</li><li>Compatible with Tata, MG, Ather, Ola, Nexon EV & all BIS-certified EVs</li><li>Solar-integrated charging — charge for free during daylight</li><li>Smart scheduling & load management via app</li><li>EVSE-certified equipment with 3-year warranty</li><li>Available for homes, apartments, offices & commercial complexes</li></ul><br><button class="btn-primary" onclick="showPage('contact')">Get EV Charger Quote</button></div>
+      <div class="sfcard-visual"><div class="sfcard-num">₹0</div><div class="sfcard-numlabel">Cost per charge with solar</div></div>
+    </div>
+    <div id="svc-subsidy" class="service-full-card reverse fade-in">
+      <div><div class="sfcard-icon">📋</div><div class="sfcard-tag">Government Subsidy</div><h3 class="sfcard-title">Subsidy & Net Metering Assistance</h3><p class="sfcard-desc">Navigating government subsidies and DISCOM paperwork can be confusing. We handle the entire process end-to-end — from application to approval — so you get every rupee you're entitled to without lifting a finger.</p><ul class="sfcard-points"><li>MNRE PM Surya Ghar subsidy — up to ₹78,000</li><li>Tamil Nadu & Pondicherry state-level subsidy filing</li><li>TNEB / TANGEDCO net metering application</li><li>DISCOM inspection coordination</li><li>Subsidy disbursement follow-up until credited</li></ul><br><button class="btn-primary" onclick="showPage('contact')">Get Subsidy Assistance</button></div>
+      <div class="sfcard-visual"><div class="sfcard-num">₹78K</div><div class="sfcard-numlabel">Max subsidy you can claim</div></div>
+    </div>
+  </div>
+
+  <!-- FREE QUOTE SECTION (replaces Pricing) -->
+  <div style="background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);padding:80px 5%;">
+    <div style="max-width:900px;margin:0 auto;text-align:center;" class="fade-in">
+      <span class="section-tag" style="background:rgba(232,98,10,0.2);color:var(--orange-mid);">No Obligation</span>
+      <h2 class="section-title" style="color:#fff;margin-top:0.5rem;">Get Your Free Custom Quote</h2>
+      <p style="color:rgba(255,255,255,0.5);font-size:1rem;line-height:1.75;max-width:600px;margin:0 auto 2.5rem;">Every solar installation is unique. Share your details and we'll send you a personalised proposal within 24 hours — including exact system size, savings estimate, subsidy amount, and total cost.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.2rem;margin-bottom:2.5rem;">
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(232,98,10,0.2);border-radius:14px;padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">📋</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem;">Free Site Survey</div>
+          <div style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Our engineer visits your site at no cost</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(232,98,10,0.2);border-radius:14px;padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">💰</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem;">Transparent Pricing</div>
+          <div style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Itemised quote — panels, labour, subsidy</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(232,98,10,0.2);border-radius:14px;padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">⚡</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem;">24hr Response</div>
+          <div style="font-size:0.82rem;color:rgba(255,255,255,0.4);">We call you back within one business day</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(232,98,10,0.2);border-radius:14px;padding:1.5rem;text-align:center;">
+          <div style="font-size:1.8rem;margin-bottom:0.5rem;">🤝</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:0.3rem;">No Pressure</div>
+          <div style="font-size:0.82rem;color:rgba(255,255,255,0.4);">Zero obligation — just honest advice</div>
+        </div>
+      </div>
+      <button class="btn-primary" style="font-size:1.05rem;padding:0.9rem 2.5rem;" onclick="showPage('contact')">☀️ Request My Free Quote Now</button>
+      <p style="margin-top:1rem;font-size:0.8rem;color:rgba(255,255,255,0.25);">Or call us directly: +91 95970 95456</p>
+    </div>
+  </div>
+</div><!-- /services -->
+
+<!-- ================= PROJECTS PAGE ================= -->
+<div id="page-projects" class="page pt-nav">
+  <div class="page-hero">
+    <div class="page-hero-dot"></div>
+    <div class="breadcrumb"><a onclick="showPage('home')">Home</a> / <span>Projects</span></div>
+    <h2>Our Installations</h2>
+    <p>50+ completed solar installations across Tamil Nadu & Pondicherry — from single homes to commercial and industrial plants.</p>
+  </div>
+  <div class="stats-section">
+    <div class="stats-row">
+      <div class="big-kpi"><div class="num">50+</div><div class="label">Projects Completed</div></div>
+      <div class="big-kpi"><div class="num">250 kW+</div><div class="label">Total Capacity Installed</div></div>
+      <div class="big-kpi"><div class="num">TN & PY</div><div class="label">States Covered</div></div>
+      <div class="big-kpi"><div class="num">₹85L+</div><div class="label">Customer Annual Savings</div></div>
+    </div>
+  </div>
+  <div class="projects-section">
+    <div class="project-filters fade-in">
+      <button class="filter-btn active" onclick="filterProjects('all',this)">All Projects</button>
+      <button class="filter-btn" onclick="filterProjects('residential',this)">Residential</button>
+      <button class="filter-btn" onclick="filterProjects('commercial',this)">Commercial</button>
+      <button class="filter-btn" onclick="filterProjects('industrial',this)">Industrial</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card fade-in" data-type="residential"><div class="project-thumb"><div class="type-badge">Residential</div><div class="kw-badge">5 kW</div><div class="kw-unit">Rooftop System</div></div><div class="project-info"><h4>Adyar Residence, Chennai</h4><p>5 kW grid-tied system with bifacial panels on a flat RCC roof. Net metering connected to TNEB.</p><div class="project-meta"><span class="pmeta">⚡ <strong>7,300 kWh/yr</strong></span><span class="pmeta">💰 <strong>₹51,100 saved/yr</strong></span><span class="pmeta">📅 <strong>2025</strong></span></div></div></div>
+      <div class="project-card fade-in" data-type="commercial"><div class="project-thumb"><div class="type-badge">Commercial</div><div class="kw-badge">50 kW</div><div class="kw-unit">Factory Rooftop</div></div><div class="project-info"><h4>SIDCO Estate, Madurai</h4><p>50 kW system for a textile unit. 3-phase grid-tied with TANGEDCO HT net metering and remote monitoring.</p><div class="project-meta"><span class="pmeta">⚡ <strong>73,000 kWh/yr</strong></span><span class="pmeta">💰 <strong>₹5.1L saved/yr</strong></span><span class="pmeta">📅 <strong>2025</strong></span></div></div></div>
+      <div class="project-card fade-in" data-type="residential"><div class="project-thumb"><div class="type-badge">Residential</div><div class="kw-badge">3 kW</div><div class="kw-unit">With Battery Backup</div></div><div class="project-info"><h4>Coimbatore — Ramnagar</h4><p>3 kW solar + 10 kWh lithium battery backup. Zero grid dependency during the day with full night coverage.</p><div class="project-meta"><span class="pmeta">⚡ <strong>4,380 kWh/yr</strong></span><span class="pmeta">💰 <strong>₹30,660/yr</strong></span><span class="pmeta">📅 <strong>2025</strong></span></div></div></div>
+      <div class="project-card fade-in" data-type="industrial"><div class="project-thumb"><div class="type-badge">Industrial</div><div class="kw-badge">500 kW</div><div class="kw-unit">Ground Mount</div></div><div class="project-info"><h4>Auto Components Plant, Salem</h4><p>500 kW ground-mounted solar plant powering 60% of the factory's total load. 25-yr PPA model.</p><div class="project-meta"><span class="pmeta">⚡ <strong>7.3 Lakh kWh/yr</strong></span><span class="pmeta">💰 <strong>₹51L saved/yr</strong></span><span class="pmeta">📅 <strong>2026</strong></span></div></div></div>
+      <div class="project-card fade-in" data-type="commercial"><div class="project-thumb"><div class="type-badge">Commercial</div><div class="kw-badge">100 kW</div><div class="kw-unit">Shopping Complex</div></div><div class="project-info"><h4>Retail Mall, Trichy</h4><p>100 kW rooftop system on a shopping mall, powering common areas and HVAC systems entirely from solar.</p><div class="project-meta"><span class="pmeta">⚡ <strong>1.46L kWh/yr</strong></span><span class="pmeta">💰 <strong>₹10.2L/yr</strong></span><span class="pmeta">📅 <strong>2026</strong></span></div></div></div>
+      <div class="project-card fade-in" data-type="residential"><div class="project-thumb"><div class="type-badge">Residential</div><div class="kw-badge">10 kW</div><div class="kw-unit">Villa Rooftop</div></div><div class="project-info"><h4>ECR Villa, Chennai</h4><p>10 kW premium system with all-black aesthetics for a beachside villa. Complete bill elimination achieved.</p><div class="project-meta"><span class="pmeta">⚡ <strong>14,600 kWh/yr</strong></span><span class="pmeta">💰 <strong>₹1.02L/yr</strong></span><span class="pmeta">📅 <strong>2026</strong></span></div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;"><button class="btn-outline" onclick="showPage('contact')">Enquire About a Project →</button></div>
+  </div>
+</div><!-- /projects -->
+
+<!-- ================= ABOUT PAGE ================= -->
+<div id="page-about" class="page pt-nav">
+  <div class="page-hero">
+    <div class="page-hero-dot"></div>
+    <div class="breadcrumb"><a onclick="showPage('home')">Home</a> / <span>About Us</span></div>
+    <h2>Who We Are</h2>
+    <p>Obilio Renewables was founded in 2025 with one mission — make clean, affordable solar energy accessible to every home and business in Tamil Nadu & Pondicherry.</p>
+  </div>
+  <div class="about-story">
+    <div class="about-grid">
+      <div class="about-img-box fade-in">
+        <div class="big-stat">2025</div>
+        <div class="big-stat-label">Year founded in Chennai</div>
+        <div class="about-mini-stats">
+          <div class="mini-stat"><div class="mini-stat-num">50+</div><div class="mini-stat-label">Installations</div></div>
+          <div class="mini-stat"><div class="mini-stat-num">250 kW</div><div class="mini-stat-label">Installed</div></div>
+          <div class="mini-stat"><div class="mini-stat-num">TN & PY</div><div class="mini-stat-label">Coverage</div></div>
+          <div class="mini-stat"><div class="mini-stat-num">15+</div><div class="mini-stat-label">Employees</div></div>
+        </div>
+      </div>
+      <div class="about-text fade-in">
+        <span class="section-tag">Our Story</span>
+        <h2>Rooted in Tamil Nadu.<br>Powered by Purpose.</h2>
+        <p>Obilio Renewables was founded in 2025 by a team of engineers who saw a massive opportunity — Tamil Nadu and Pondicherry receive over 300 sunny days a year, yet solar adoption remained painfully low due to lack of trust and confusing subsidy processes.</p>
+        <p>We built Obilio to be different: absolute transparency in pricing, subsidy handled completely by us, and only Tier-1 components. No shortcuts, no middlemen, no surprises.</p>
+        <p>Since our launch in 2025, we've already completed 50+ installations — spanning individual households, commercial shops, and industrial clients across Tamil Nadu & Pondicherry — and we're growing fast.</p>
+        <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <button class="btn-primary" onclick="showPage('contact')">Work With Us</button>
+          <button class="btn-outline" onclick="showPage('projects')">See Our Work</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="values-section">
+    <div class="section-header fade-in" style="text-align:center;max-width:540px;margin:0 auto 3rem;">
+      <span class="section-tag">Our Values</span>
+      <h2 class="section-title">What We Stand For</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card fade-in"><div class="vi">⚡</div><h4>Quality First</h4><p>We never compromise on components. Only Tier-1 certified panels and inverters from globally proven brands.</p></div>
+      <div class="value-card fade-in"><div class="vi">🤝</div><h4>Full Transparency</h4><p>No hidden charges. Every quote includes material, labor, subsidy, and warranty details — clearly.</p></div>
+      <div class="value-card fade-in"><div class="vi">🌱</div><h4>Planet Positive</h4><p>Every installation we do offsets tonnes of CO₂. We track our collective environmental impact with pride.</p></div>
+      <div class="value-card fade-in"><div class="vi">🧭</div><h4>Customer for Life</h4><p>Our relationship doesn't end at installation. 24/7 support, annual checkups, and proactive maintenance.</p></div>
+    </div>
+  </div>
+  <div class="team-section">
+    <div class="section-header fade-in" style="text-align:center;max-width:540px;margin:0 auto 3rem;">
+      <span class="section-tag">Meet the Team</span>
+      <h2 class="section-title">The People Behind Obilio</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-in"><div class="team-avatar">HV</div><h4>Heamnath Veerapandian</h4><div class="role">Founder & CEO</div></div>
+      <div class="team-card fade-in"><div class="team-avatar">AR</div><h4>Aakash Ramesh</h4><div class="role">Chief Technician</div></div>
+      <div class="team-card fade-in"><div class="team-avatar">LK</div><h4>Leninkumar</h4><div class="role">Operations Lead</div></div>
+      <div class="team-card fade-in"><div class="team-avatar">GS</div><h4>Garry Sejohn</h4><div class="role">Subsidy & Liaison</div></div>
+    </div>
+  </div>
+</div><!-- /about -->
+
+<!-- ================= BLOG PAGE ================= -->
+<div id="page-blog" class="page pt-nav">
+  <div class="page-hero">
+    <div class="page-hero-dot"></div>
+    <div class="breadcrumb"><a onclick="showPage('home')">Home</a> / <span>Blog</span></div>
+    <h2>Solar Knowledge Hub</h2>
+    <p>Tips, guides, industry news, and policy updates — everything you need to make smart solar decisions.</p>
+  </div>
+  <div class="blog-section">
+    <div class="blog-grid">
+      <div class="blog-main">
+        <div class="blog-card fade-in"><div class="blog-thumb">☀️<span class="blog-cat">Policy</span></div><div class="blog-body"><div class="blog-meta">June 5, 2025 · 5 min read</div><h3>MNRE Increases Residential Subsidy to 40% — Here's What Tamil Nadu Homeowners Need to Know</h3><p>The central government has raised the PM Surya Ghar subsidy for residential systems under 3 kW from 30% to 40%. We break down the eligibility criteria, how to apply, and why now is the best time to go solar in Tamil Nadu.</p><a class="read-more">Read full article →</a></div></div>
+        <div class="blog-card fade-in"><div class="blog-thumb">🔋<span class="blog-cat">Technology</span></div><div class="blog-body"><div class="blog-meta">May 18, 2025 · 7 min read</div><h3>LFP vs NMC Batteries: Which Solar Battery Should You Choose in 2025?</h3><p>With battery storage becoming more affordable, homeowners are increasingly adding storage to their solar systems. We compare the two dominant chemistries — LFP (Lithium Iron Phosphate) and NMC — on safety, cost, cycle life, and performance in Tamil Nadu's climate.</p><a class="read-more">Read full article →</a></div></div>
+        <div class="blog-card fade-in"><div class="blog-thumb">💡<span class="blog-cat">Guide</span></div><div class="blog-body"><div class="blog-meta">April 30, 2025 · 6 min read</div><h3>Step-by-Step Guide to TNEB Net Metering Registration in Tamil Nadu (2025)</h3><p>Net metering lets you sell surplus solar power back to the grid, effectively running your electricity meter backwards. This complete guide covers the application process, required documents, and typical timelines for TANGEDCO approval.</p><a class="read-more">Read full article →</a></div></div>
+      </div>
+      <div class="blog-sidebar">
+        <div class="sidebar-widget">
+          <h4>Recent Posts</h4>
+          <div class="sidebar-post"><div class="sp-icon">🏠</div><div><div class="sp-title">Top 5 Solar Panels Available in India (2025 Comparison)</div><div class="sp-date">May 25, 2025</div></div></div>
+          <div class="sidebar-post"><div class="sp-icon">📉</div><div><div class="sp-title">Why Solar Panel Prices Have Dropped 80% in 10 Years</div><div class="sp-date">April 12, 2025</div></div></div>
+          <div class="sidebar-post"><div class="sp-icon">🌧️</div><div><div class="sp-title">Does Solar Work During Rainy Season in Tamil Nadu?</div><div class="sp-date">March 28, 2025</div></div></div>
+          <div class="sidebar-post"><div class="sp-icon">💸</div><div><div class="sp-title">Accelerated Depreciation: The Hidden Benefit for Businesses</div><div class="sp-date">March 10, 2025</div></div></div>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Topics</h4>
+          <div class="tag-cloud">
+            <span class="tag">Subsidy</span><span class="tag">Net Metering</span><span class="tag">Residential</span><span class="tag">Commercial</span><span class="tag">Battery</span><span class="tag">TNEB</span><span class="tag">Policy</span><span class="tag">Maintenance</span><span class="tag">ROI</span><span class="tag">Technology</span>
+          </div>
+        </div>
+        <div class="sidebar-widget" style="background:var(--dark);border:none;">
+          <h4 style="color:#fff;">Need Expert Advice?</h4>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.65;margin-bottom:1rem;">Our solar consultants answer all your questions — free of charge.</p>
+          <button class="btn-primary" style="width:100%" onclick="showPage('contact')">Talk to an Expert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /blog -->
+
+<!-- ================= CONTACT PAGE ================= -->
+<div id="page-contact" class="page pt-nav">
+  <div class="page-hero">
+    <div class="page-hero-dot"></div>
+    <div class="breadcrumb"><a onclick="showPage('home')">Home</a> / <span>Contact</span></div>
+    <h2>Get Your Free Quote</h2>
+    <p>Fill in the form and our team will contact you within 24 hours to schedule a free site visit — no obligation.</p>
+  </div>
+  <div class="contact-full">
+    <div class="contact-grid">
+      <div class="fade-in">
+        <div class="contact-info">
+          <h3>Let's Talk Solar</h3>
+          <p>Whether you're a homeowner curious about savings or a business ready to go green — we're here to help at every step.</p>
+        </div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><p class="c-label">Phone / WhatsApp</p><p class="c-val">+91 95970 95456</p></div></div>
+        <div class="contact-item"><div class="contact-icon">✉️</div><div><p class="c-label">Email</p><p class="c-val">obilioglobalservices@gmail.com</p></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><p class="c-label">Head Office</p><p class="c-val">Chennai, Tamil Nadu<br><span style="font-size:0.82rem;color:var(--gray);">Serving Tamil Nadu & Pondicherry</span></p></div></div>
+        <div class="contact-item"><div class="contact-icon">⏰</div><div><p class="c-label">Working Hours</p><p class="c-val">Mon–Sat: 9 AM – 7 PM</p></div></div>
+        <div style="margin-top:2rem;background:var(--orange-pale);border-radius:var(--radius);padding:1.5rem;">
+          <p style="font-size:0.85rem;font-weight:600;color:var(--dark);margin-bottom:0.5rem;">⚡ Quick Response Promise</p>
+          <p style="font-size:0.82rem;color:var(--gray);line-height:1.6;">We respond to all enquiries within 4 business hours. Site visits scheduled within 48 hours in Chennai, Coimbatore, and Madurai.</p>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>Your Name *</label><input type="text" id="fname" placeholder="e.g. Rajan Kumar"/></div>
+            <div class="form-group">
+              <label>Mobile Number *</label>
+              <input type="tel" id="fphone" placeholder="10-digit mobile number" maxlength="10" oninput="this.value=this.value.replace(/\D/g,'');validatePhone(this)"/>
+              <span id="phone-err" style="display:none;font-size:0.75rem;color:#e74c3c;margin-top:3px;">Please enter a valid 10-digit mobile number</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="femail" placeholder="you@email.com" oninput="validateEmail(this)"/>
+            <span id="email-err" style="display:none;font-size:0.75rem;color:#e74c3c;margin-top:3px;">Please enter a valid email address (e.g. name@gmail.com)</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Installation Type *</label><select id="ftype"><option>Residential (Home)</option><option>Commercial (Shop/Office)</option><option>Industrial (Factory)</option><option>Agricultural (Pump)</option></select></div>
+            <div class="form-group"><label>Approximate System Size</label><select id="fsize"><option>1–3 kW</option><option>3–5 kW</option><option>5–10 kW</option><option>10–50 kW</option><option>50 kW+</option></select></div>
+          </div>
+          <div class="form-group"><label>District / City *</label><input type="text" id="fcity" placeholder="e.g. Chennai, Coimbatore, Madurai…"/></div>
+          <div class="form-group"><label>Monthly Electricity Bill (approx)</label><input type="text" id="fbill" placeholder="e.g. ₹3,000 per month"/></div>
+          <div class="form-group"><label>Message (Optional)</label><textarea id="fmsg" placeholder="Any specific requirements or questions…"></textarea></div>
+          <button class="btn-primary" style="width:100%;font-size:1rem;padding:0.9rem;" onclick="submitForm()">Submit — Get Free Quote ☀️</button>
+          <div class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours to schedule your free site visit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map-section">
+    <div class="section-header fade-in" style="text-align:center;max-width:580px;margin:0 auto 1.5rem;">
+      <span class="section-tag">Coverage</span>
+      <h2 class="section-title">Tamil Nadu & Pondicherry</h2>
+    </div>
+    <div class="districts-grid fade-in">
+      <div class="district-pill" style="background:rgba(232,98,10,0.08);border-color:var(--orange);color:var(--orange);font-weight:600;">Pondicherry ★</div><div class="district-pill">Chennai</div><div class="district-pill">Coimbatore</div><div class="district-pill">Madurai</div><div class="district-pill">Salem</div><div class="district-pill">Trichy</div><div class="district-pill">Tirunelveli</div><div class="district-pill">Erode</div><div class="district-pill">Vellore</div><div class="district-pill">Thanjavur</div><div class="district-pill">Tiruppur</div><div class="district-pill">Kanchipuram</div><div class="district-pill">Dindigul</div><div class="district-pill">Cuddalore</div><div class="district-pill">Villupuram</div><div class="district-pill">Namakkal</div><div class="district-pill">Dharmapuri</div><div class="district-pill">Krishnagiri</div><div class="district-pill">Virudhunagar</div><div class="district-pill">Ramanathapuram</div><div class="district-pill">Thoothukudi</div><div class="district-pill">Tiruvarur</div><div class="district-pill">Nagapattinam</div><div class="district-pill">Sivagangai</div><div class="district-pill">Pudukkottai</div>
+    </div>
+  </div>
+</div><!-- /contact -->
+
+<!-- ====== FOOTER (shared) ====== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="nav-logo" onclick="showPage('home')"><span>Obilio</span> Renewables</a>
+      <p>Tamil Nadu's trusted MNRE-empanelled solar energy partner. Clean energy for a brighter tomorrow — serving all 38 districts.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a onclick="showPage('services')">Residential Solar</a></li>
+        <li><a onclick="showPage('services')">Commercial Solar</a></li>
+        <li><a onclick="showPage('services')">Industrial Solar</a></li>
+        <li><a onclick="showPage('services')">Battery Storage</a></li>
+        <li><a onclick="showPage('services')">Subsidy Assistance</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a onclick="showPage('about')">About Us</a></li>
+        <li><a onclick="showPage('projects')">Our Projects</a></li>
+        <li><a onclick="showPage('blog')">Blog</a></li>
+        <li><a onclick="showPage('contact')">Contact</a></li>
+        <li><a onclick="showPage('contact')">Get Free Quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a onclick="showPage('contact')">Chennai</a></li>
+        <li><a onclick="showPage('contact')">Coimbatore</a></li>
+        <li><a onclick="showPage('contact')">Madurai</a></li>
+        <li><a onclick="showPage('contact')">Pondicherry</a></li>
+        <li><a onclick="showPage('contact')">All TN Districts</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Obilio Global Services · MNRE Empanelled · All rights reserved.</p>
+    <div class="solar-badge">☀ Powered by Clean Energy</div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<button class="floating-cta pulse" onclick="showPage('contact')">☀️ Free Quote</button>
+
+<script>
+// PAGE ROUTER
+// PAGE ROUTER
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  const navEl=document.getElementById('nav-'+id);
+  if(navEl) navEl.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  setTimeout(()=>{
+    document.querySelectorAll('#page-'+id+' .fade-in').forEach(el=>{
+      const rect=el.getBoundingClientRect();
+      if(rect.top<window.innerHeight) el.classList.add('visible');
+    });
+    initObserver();
+  },50);
+}
+
+// Scroll to a section ID within the current page (used by dropdown links)
+function scrollToSection(id){
+  setTimeout(()=>{
+    const el=document.getElementById(id);
+    if(el){
+      const top=el.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top,behavior:'smooth'});
+    }
+  },80);
+}
+
+// HAMBURGER
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu');
+  const h=document.getElementById('hamburger');
+  m.classList.toggle('open');
+  h.classList.toggle('open');
+}
+
+// SAVINGS CALCULATOR — removed sysTotal/netCost rows
+function calcSavings(){
+  const bill=parseInt(document.getElementById('bill').value);
+  const kw=parseFloat(document.getElementById('kw').value);
+  const sub=parseFloat(document.getElementById('subsidy').value);
+  document.getElementById('billVal').textContent=bill.toLocaleString('en-IN');
+  document.getElementById('kwVal').textContent=kw;
+  document.getElementById('areaVal').textContent=document.getElementById('area').value;
+  const sysTotal=kw*70000;
+  const netCost=Math.round(sysTotal*(1-sub));
+  const units=Math.round(kw*4.1*365);
+  const annualSavings=Math.round(units*7);
+  const payback=parseFloat((netCost/annualSavings).toFixed(1));
+  const lifetime=Math.round(annualSavings*25);
+  document.getElementById('units').textContent=units.toLocaleString('en-IN');
+  document.getElementById('savings').textContent=annualSavings.toLocaleString('en-IN');
+  document.getElementById('payback').textContent=payback;
+  document.getElementById('lifetime').textContent=lifetime.toLocaleString('en-IN');
+}
+calcSavings();
+
+// SUBSIDY COUNTDOWN — target: 31 March 2027
+function updateCountdown(){
+  const target=new Date('2027-03-31T23:59:59+05:30');
+  const now=new Date();
+  const diff=target-now;
+  if(diff<=0){
+    document.getElementById('cd-days').textContent='000';
+    document.getElementById('cd-hours').textContent='00';
+    document.getElementById('cd-mins').textContent='00';
+    document.getElementById('cd-secs').textContent='00';
+    return;
+  }
+  const days=Math.floor(diff/(1000*60*60*24));
+  const hours=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  const mins=Math.floor((diff%(1000*60*60))/(1000*60));
+  const secs=Math.floor((diff%(1000*60))/1000);
+  document.getElementById('cd-days').textContent=String(days).padStart(3,'0');
+  document.getElementById('cd-hours').textContent=String(hours).padStart(2,'0');
+  document.getElementById('cd-mins').textContent=String(mins).padStart(2,'0');
+  document.getElementById('cd-secs').textContent=String(secs).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+// PROJECT FILTER
+function filterProjects(type,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.project-card').forEach(c=>{
+    c.style.display=(type==='all'||c.dataset.type===type)?'block':'none';
+  });
+}
+
+// FORM VALIDATION HELPERS
+function validatePhone(input){
+  const err=document.getElementById('phone-err');
+  if(input.value.length>0 && (input.value.length!==10 || !/^[6-9]/.test(input.value))){
+    err.style.display='block'; input.style.borderColor='#e74c3c';
+  } else {
+    err.style.display='none'; input.style.borderColor='';
+  }
+}
+function validateEmail(input){
+  const err=document.getElementById('email-err');
+  const valid=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+  if(input.value.length>0 && !valid){
+    err.style.display='block'; input.style.borderColor='#e74c3c';
+  } else {
+    err.style.display='none'; input.style.borderColor='';
+  }
+}
+
+// CONTACT FORM — Web3Forms → delivers directly to aakashezhil@gmail.com
+async function submitForm(){
+  const name  = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  const city  = document.getElementById('fcity').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  const type  = document.getElementById('ftype').value;
+  const size  = document.getElementById('fsize').value;
+  const bill  = document.getElementById('fbill').value.trim();
+  const msg   = document.getElementById('fmsg').value.trim();
+
+  // Validation
+  if(!name){alert('Please enter your name.');return;}
+  if(!phone || phone.length!==10 || !/^[6-9]/.test(phone)){
+    alert('Please enter a valid 10-digit Indian mobile number.');return;
+  }
+  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    alert('Please enter a valid email address.');return;
+  }
+  if(!city){alert('Please enter your city / district.');return;}
+
+  const btn=document.querySelector('#contactForm button');
+  btn.disabled=true;
+  btn.textContent='⏳ Sending…';
+  btn.style.opacity='0.7';
+
+  try {
+    const res=await fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        access_key:'718a62e6-9574-482f-ac7c-db4f3d14b2ba',
+        subject:'☀️ New Solar Quote — Obilio Renewables',
+        from_name:'Obilio Website',
+        botcheck:false,
+        Name:name,
+        Mobile:phone,
+        Email:email||'—',
+        City:city,
+        'Installation Type':type,
+        'System Size':size,
+        'Monthly Bill':bill||'—',
+        Message:msg||'—',
+        'Submitted At':new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata'})
+      })
+    });
+    const data=await res.json();
+    if(data.success){
+      document.getElementById('formSuccess').style.display='block';
+      btn.textContent='✅ Quote Sent!';
+      btn.style.opacity='0.55';
+      ['fname','fphone','femail','fcity','fbill','fmsg'].forEach(id=>{
+        const el=document.getElementById(id);
+        if(el) el.value='';
+      });
+    } else {
+      throw new Error(data.message||'Failed');
+    }
+  } catch(err){
+    console.error(err);
+    btn.disabled=false;
+    btn.textContent='Submit — Get Free Quote ☀️';
+    btn.style.opacity='1';
+    alert('Could not send. Please call us at +91 95970 95456 or WhatsApp directly.');
+  }
+}
+
+// SCROLL ANIMATIONS
+function initObserver(){
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+  },{threshold:0.1});
+  document.querySelectorAll('.fade-in:not(.visible)').forEach(el=>obs.observe(el));
+}
+initObserver();
+window.addEventListener('scroll',()=>{
+  document.querySelectorAll('.fade-in:not(.visible)').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top<window.innerHeight-50) el.classList.add('visible');
+  });
+});
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.fade-in').forEach(el=>{
+    if(el.getBoundingClientRect().top<window.innerHeight) el.classList.add('visible');
+  });
+});
+</script>
+</body>
+</html>
